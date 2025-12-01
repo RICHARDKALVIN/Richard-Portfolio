@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+/* body {
+  @apply font-poppins;
+} */
+ body {
+  @apply font-outfit text-[15px];
+}
+h1 { @apply text-[2rem] md:text-[3rem]; }
+h2 { @apply text-[1.7rem]; }
+h3 { @apply text-[1.3rem]; }
+p  { @apply text-[0.95rem]; }
+/* Hide scrollbar but allow scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE / Edge */
+  scrollbar-width: none;     /* Firefox */
+}
