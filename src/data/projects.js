@@ -33,8 +33,8 @@ export const projects = [
     
   },
   {
-    title: "E-Commerce Platform",
-    desc: "Full-stack ecommerce system with cart, orders, payments.",
+    title: "Online shopping platform",
+    desc: "Full-stack ecommerce system with cart, orders, payments and order tracking functionality",
     image: "/projects/x.jpg",
     tech: ["React", "Node.js", "Express", "MySQL"],
     github: "https://github.com/RICHARDKALVIN/Full-stack-ecommerce--AI-powered",
