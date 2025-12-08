@@ -25,7 +25,7 @@ export const projects = [
     demo: "https://vision-voice-mini-project.onrender.com/",
   },
   {
-    title: "Cafe management System",
+    title: "Cafe tio",
     desc: "A cafe management system built with Spring Boot and MySQL to handle orders, inventory, staff, and daily operations efficiently.",
     image: "/projects/cafe.webp",
     tech: ["Spring Boot","React","My Sql"],
@@ -42,8 +42,8 @@ export const projects = [
   },
   
   {
-    title: "Library management system",
-    desc: "A Spring Boot and MySQL–based library management system designed to manage books, members, borrowing, and returns.",
+    title: "Book bee",
+    desc: "A Spring Boot and MySQL–based book store management system designed to manage books, members, borrowing, and returns.",
     image: "/projects/library.webp",
     tech: ["Spring Boot","React","My Sql"],
     github: "https://github.com/RICHARDKALVIN/Library_management",
