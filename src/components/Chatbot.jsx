@@ -70,6 +70,145 @@ Achievements:
 • Azure AI Engineer Associate
 • LeetCode 350+ problems solved
 • Coordinator — Celenza 2025
+export const timeline = [
+  {
+    year: "2020",
+    title: "Completed SSLC ",
+    desc: "Finished my 10th grade at GHSS Kannirajapuram, building a strong base in academics.",
+  },
+  {
+    year: "2022",
+    title: "Completed HSC ",
+    desc: "Graduated from GHSS Kannirajapuram and chose Information Technology as my career path.",
+  },
+  {
+    year: "2022",
+    title: "Started B.Tech – Information Technology",
+    desc: "Joined B.Tech IT  to explore programming, networking, and software development. Expected to pass out in 2026.",
+  },
+  {
+    year: "2024",
+    title: "Internship – Application Developer",
+    desc: "Completed an internship at Arjun Vision Tech, Ekkaduthangal,Chennai as an Application Developer, gaining real-world development experience.",
+  },
+  {
+    year: "2025",
+    title: "Focused on Building My Career",
+    desc: "Working toward becoming a MERN stack developer / software developer. Learning Spring Boot, JDBC, and Java-based backend concepts.",
+  },
+  {
+    year: "2026",
+    title: "Final Year & Preparing for Placements",
+    desc: "Completing my B.Tech IT degree while enhancing DSA, system design, and full-stack development skills for job placements.",
+  },
+];
+export const skills = [
+  {
+    category: "Frontend",
+    items: [
+      { name: "HTML", icon: "/icons/html.png" },
+      { name: "CSS", icon: "/icons/css.png" },
+      { name: "JavaScript", icon: "/icons/js.png" },
+      { name: "React", icon: "/icons/react.png" },
+    ],
+  },
+  {
+    category: "Backend",
+    items: [
+      { name: "Spring Boot", icon: "/icons/springboot.png" },
+      { name: "Node.js", icon: "/icons/node.png" },
+      { name: "Express", icon: "/icons/expressjs.png" },
+      { name: "MongoDB", icon: "/icons/mongodb.png" },
+      { name: "My SQL", icon: "/icons/mysql.png" },
+    ],
+  },
+  {
+    category: "Languages",
+    items: [
+      { name: "Java", icon: "/icons/java.png" },
+      // { name: "Java Script", icon: "/icons/js.png" },
+      { name: "Python", icon: "/icons/python.png" },
+      { name: "C", icon: "/icons/c.png" },
+    ],
+  },
+  {
+    category: "Tools",
+    items: [
+      { name: "Git", icon: "/icons/git.png" },
+      { name: "GitHub", icon: "/icons/github.png" },
+      { name: "VS Code", icon: "/icons/vscode.png" },
+      { name: "Postman", icon: "/icons/postman.png" },
+            { name: "Cursor", icon: "/icons/cursor.png" },
+    ],
+  },
+];
+export const skillLevels = [
+  { name: "Java", level: 90 },
+  { name: "JavaScript", level: 80 },
+  { name: "Python", level: 70 },
+  { name: "React", level: 85 },
+  { name: "Node.js", level: 80 },
+  { name: "Express.js", level: 70 },
+  { name: "MongoDB", level: 70 },
+  { name: "My SQL", level: 85 },
+  
+  ,
+];
+export const projects = [
+ {
+    title: "AI chatbot",
+    desc: "An AI chatbot capable of understanding natural language, answering questions, and providing smart, human-like responses. Designed to offer smooth interactions and fast assistance for users.",
+    image: "/projects/chat.jpg",
+    tech: ["React", "Node.js", "Express","MongoDB"],
+    github: "https://github.com/RICHARDKALVIN/ChatBot_using_React-_and_Node_js",
+    demo: "https://chatbot-using-react-44z7.onrender.com",
+  },
+  {
+    title: "Ruby Chat Room",
+    desc: "A real-time chat room web application that enables fast and secure messaging with features like emoji support,  user presence indicators, and a clean  interface for an enhanced communication experience.",
+    image: "/projects/rubychat.avif",
+    tech: ["React", "Node.js","Express", "MongoDB"],
+    github: "https://github.com/RICHARDKALVIN/ruby_chatappo",
+    
+  },
+ 
+  {
+    title: "Vision Voice",
+    desc: "Vision Voice is an AI-powered assistive application designed to help visually impaired individuals understand their surroundings using simple voice-based feedback.",
+    image: "/projects/visionvoicepro.jpg",
+    tech: ["React", "Node.js", "Express", "MongoDB"],
+    github: "https://github.com/RICHARDKALVIN/vision_voice-mobile_and_webapp",
+    demo: "https://vision-voice-mini-project.onrender.com/",
+  },
+  {
+    title: "Cafe tio",
+    desc: "A cafe management system built with Spring Boot and MySQL to handle orders, inventory, staff, and daily operations efficiently.",
+    image: "/projects/cafe.webp",
+    tech: ["Spring Boot","React","My Sql"],
+    github: "https://github.com/RICHARDKALVIN/Cafe-management",
+    
+  },
+  {
+    title: "Online shopping platform",
+    desc: "Full-stack ecommerce system with cart, orders, payments and order tracking functionality",
+    image: "/projects/x.jpg",
+    tech: ["React", "Node.js", "Express", "MySQL"],
+    github: "https://github.com/RICHARDKALVIN/Full-stack-ecommerce--AI-powered",
+    demo: "https://full-stack-ecommerce-ai-powered.vercel.app/",
+  },
+  
+  {
+    title: "Book bee",
+    desc: "A Spring Boot and MySQL–based book store management system designed to manage books, members, borrowing, and returns.",
+    image: "/projects/library.webp",
+    tech: ["Spring Boot","React","My Sql"],
+    github: "https://github.com/RICHARDKALVIN/Library_management",
+    
+  }
+];
+
+
+
 
 User: ${userMsg}
 `;
