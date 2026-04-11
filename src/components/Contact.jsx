@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import Reveal from "./Reveal";
 import { motion } from "framer-motion";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import SuccessPopup from "./SuccessPopup";
 import {
   FaGithub,
@@ -36,10 +36,10 @@ export default function Contact() {
         setTimeout(() => setShowPopup(false), 3000);
       })
       .catch((err) => {
-        setLoading(false);
-        alert("Something went wrong 😢 Try again.");
-        console.error(err);
-      });
+  setLoading(false);
+  console.error("FULL ERROR:", err);
+  alert(err?.text || err?.message || "Something went wrong");
+});
   };
 
   return (
