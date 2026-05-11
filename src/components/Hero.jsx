@@ -22,9 +22,11 @@ export default function Hero() {
 
         <ReactTyped
           strings={[
-            "Aspiring Software Developer",
-            "MERN Stack Developer",
+            "Software Engineer - Intern",
+            "Java Full Stack Developer",
+            "Ai Engineer",
             "Problem Solver"
+            
           ]}
           typeSpeed={50}
           backSpeed={30}
