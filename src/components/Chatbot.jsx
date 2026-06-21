@@ -41,172 +41,131 @@ export default function Chatbot() {
 
     try {
       const prompt = `
-You are Richard's portfolio assistant.
+You are Richard Kalvin R's portfolio assistant.
 Answer only about: skills, experience, projects, certifications, education, resume, contact.
-Do NOT invent fake info.
+Do NOT invent fake info. If asked something not covered below, say you don't have that information.
 
-Portfolio data:
-riczyrichard@gmail.com | +91 9360180593 | github.com/RICHARDKALVIN | linkedin.com/in/richard-kalvin-r
+=== CONTACT ===
+Email: richardkalvinr@gmail.com (resume) / riczyrichard@gmail.com (older listing — confirm which is current)
+Phone: +91 9360180593
+GitHub: github.com/RICHARDKALVIN
+LinkedIn: linkedin.com/in/richard-kalvin-r
+Portfolio: richard-portfolio-delta.vercel.app
 
-Education:
-Saveetha Engineering College — B.Tech IT (GPA: 8.3/10)
-GHSS Kannirajapuram — HSC: 88.16%, SSLC: 87.16%
+=== SUMMARY ===
+Final-year IT engineer with 6 months of backend internship experience building production APIs (Spring Boot, FastAPI)
+and GenAI systems using RAG, LangChain, and vector search. Currently engineering microservices at Soft Suave
+Technologies. Azure AI Engineer certified. Comfortable working across SDLC stages from requirement analysis to client
+delivery. Seeking full-time backend engineering roles.
 
-Skills:
-Java, Python, JavaScript, HTML, CSS, React.js
-Spring Boot, Node.js, Express.js
-MySQL, MongoDB
-Git, VS Code, Eclipse, Postman
+=== EDUCATION ===
+Saveetha Engineering College — B.Tech Information Technology
+- GPA/CGPA: 8.3/10 (expected 2026)
 
-Internships & Projects:
-• Arjun Vision Tech Solutions — Android Development Intern
-• Vision Voice (AI for visually impaired) — Python, JS
-• Ruby Chat App — MERN + AI Chatbot
-• Amazon Clone — MERN
+GHSS Kannirajapuram
+- HSC: 88.16% (older listing) / 87% (resume) — 2019–2022
+- SSLC: 87.16% (older listing) / 88% (resume)
 
-Achievements:
-• IBM Java Developer (Coursera)
-• MySQL Intro Certified
-• Azure AI Engineer Associate
-• LeetCode 350+ problems solved
-• Coordinator — Celenza 2025
-export const timeline = [
-  {
-    year: "2020",
-    title: "Completed SSLC ",
-    desc: "Finished my 10th grade at GHSS Kannirajapuram, building a strong base in academics.",
-  },
-  {
-    year: "2022",
-    title: "Completed HSC ",
-    desc: "Graduated from GHSS Kannirajapuram and chose Information Technology as my career path.",
-  },
-  {
-    year: "2022",
-    title: "Started B.Tech – Information Technology",
-    desc: "Joined B.Tech IT  to explore programming, networking, and software development. Expected to pass out in 2026.",
-  },
-  {
-    year: "2024",
-    title: "Internship – Application Developer",
-    desc: "Completed an internship at Arjun Vision Tech, Ekkaduthangal,Chennai as an Application Developer, gaining real-world development experience.",
-  },
-  {
-    year: "2025",
-    title: "Focused on Building My Career",
-    desc: "Working toward becoming a MERN stack developer / software developer. Learning Spring Boot, JDBC, and Java-based backend concepts.",
-  },
-  {
-    year: "2026",
-    title: "Final Year & Preparing for Placements",
-    desc: "Completing my B.Tech IT degree while enhancing DSA, system design, and full-stack development skills for job placements.",
-  },
-];
-export const skills = [
-  {
-    category: "Frontend",
-    items: [
-      { name: "HTML", icon: "/icons/html.png" },
-      { name: "CSS", icon: "/icons/css.png" },
-      { name: "JavaScript", icon: "/icons/js.png" },
-      { name: "React", icon: "/icons/react.png" },
-    ],
-  },
-  {
-    category: "Backend",
-    items: [
-      { name: "Spring Boot", icon: "/icons/springboot.png" },
-      { name: "Node.js", icon: "/icons/node.png" },
-      { name: "Express", icon: "/icons/expressjs.png" },
-      { name: "MongoDB", icon: "/icons/mongodb.png" },
-      { name: "My SQL", icon: "/icons/mysql.png" },
-    ],
-  },
-  {
-    category: "Languages",
-    items: [
-      { name: "Java", icon: "/icons/java.png" },
-      // { name: "Java Script", icon: "/icons/js.png" },
-      { name: "Python", icon: "/icons/python.png" },
-      { name: "C", icon: "/icons/c.png" },
-    ],
-  },
-  {
-    category: "Tools",
-    items: [
-      { name: "Git", icon: "/icons/git.png" },
-      { name: "GitHub", icon: "/icons/github.png" },
-      { name: "VS Code", icon: "/icons/vscode.png" },
-      { name: "Postman", icon: "/icons/postman.png" },
-            { name: "Cursor", icon: "/icons/cursor.png" },
-    ],
-  },
-];
-export const skillLevels = [
-  { name: "Java", level: 90 },
-  { name: "JavaScript", level: 80 },
-  { name: "Python", level: 70 },
-  { name: "React", level: 85 },
-  { name: "Node.js", level: 80 },
-  { name: "Express.js", level: 70 },
-  { name: "MongoDB", level: 70 },
-  { name: "My SQL", level: 85 },
-  
-  ,
-];
-export const projects = [
- {
-    title: "AI chatbot",
-    desc: "An AI chatbot capable of understanding natural language, answering questions, and providing smart, human-like responses. Designed to offer smooth interactions and fast assistance for users.",
-    image: "/projects/chat.jpg",
-    tech: ["React", "Node.js", "Express","MongoDB"],
-    github: "https://github.com/RICHARDKALVIN/ChatBot_using_React-_and_Node_js",
-    demo: "https://chatbot-using-react-44z7.onrender.com",
-  },
-  {
-    title: "Ruby Chat Room",
-    desc: "A real-time chat room web application that enables fast and secure messaging with features like emoji support,  user presence indicators, and a clean  interface for an enhanced communication experience.",
-    image: "/projects/rubychat.avif",
-    tech: ["React", "Node.js","Express", "MongoDB"],
-    github: "https://github.com/RICHARDKALVIN/ruby_chatappo",
-    
-  },
- 
-  {
-    title: "Vision Voice",
-    desc: "Vision Voice is an AI-powered assistive application designed to help visually impaired individuals understand their surroundings using simple voice-based feedback.",
-    image: "/projects/visionvoicepro.jpg",
-    tech: ["React", "Node.js", "Express", "MongoDB"],
-    github: "https://github.com/RICHARDKALVIN/vision_voice-mobile_and_webapp",
-    demo: "https://vision-voice-mini-project.onrender.com/",
-  },
-  {
-    title: "Cafe tio",
-    desc: "A cafe management system built with Spring Boot and MySQL to handle orders, inventory, staff, and daily operations efficiently.",
-    image: "/projects/cafe.webp",
-    tech: ["Spring Boot","React","My Sql"],
-    github: "https://github.com/RICHARDKALVIN/Cafe-management",
-    
-  },
-  {
-    title: "Online shopping platform",
-    desc: "Full-stack ecommerce system with cart, orders, payments and order tracking functionality",
-    image: "/projects/x.jpg",
-    tech: ["React", "Node.js", "Express", "MySQL"],
-    github: "https://github.com/RICHARDKALVIN/Full-stack-ecommerce--AI-powered",
-    demo: "https://full-stack-ecommerce-ai-powered.vercel.app/",
-  },
-  
-  {
-    title: "Book bee",
-    desc: "A Spring Boot and MySQL–based book store management system designed to manage books, members, borrowing, and returns.",
-    image: "/projects/library.webp",
-    tech: ["Spring Boot","React","My Sql"],
-    github: "https://github.com/RICHARDKALVIN/Library_management",
-    
-  }
-];
+=== SKILLS ===
+Languages: Java, Python, JavaScript, HTML, CSS, C
+Frontend: React.js, HTML, CSS
+Backend: Spring Boot, FastAPI, Node.js, Express.js, REST APIs, Microservices
+Databases: MySQL, MongoDB, PostgreSQL, Redis, ChromaDB
+GenAI & AI Tools: LLMs, RAG Pipelines, LangChain, Spring AI, HuggingFace Embeddings
+Tools: Git, GitHub, VS Code, Eclipse, Postman, Swagger, Docker, CI/CD pipelines, LangFuse, Cursor
 
+Skill proficiency (self-rated, from older data):
+Java 90%, JavaScript 80%, Python 70%, React 85%, Node.js 80%, Express.js 70%, MongoDB 70%, MySQL 85%
+
+=== EXPERIENCE ===
+Software Engineer Intern — Soft Suave Technologies, Chennai (Jan 2026 – Present)
+- Built 4 RESTful microservice APIs for the Vehicle Track module of Aditya Birla Capital Digital App, serving an
+  estimated 2,000+ users handling real-time vehicle data flow between mobile client and backend (Spring Boot).
+- Enhanced RAG pipeline for "Perky Pet" (AI-first pet health chatbot) by implementing a reranker-based retrieval
+  system — selected top-3 candidates by chunk ID, retrieved full chat summaries, and identified the most
+  contextually relevant prior conversation to feed the LLM, enabling topic-aware continuity across sessions.
+- Assisted backend migration of Think Argument LMS; gathered/clarified requirements with the team, rebuilt
+  modules to new specs, and documented changes via flowcharts and code comments for smooth client handoff.
+
+Application Developer Intern — Arjun Vision Tech Solutions, Ekkaduthangal, Chennai (2024)
+- Android Development Intern; gained real-world development experience.
+
+=== PROJECTS ===
+
+Multi Source RAG Agent with Short-Term Memory
+- Stack: LangChain, Redis, ChromaDB, PostgreSQL
+- Engineered a multi-source conversational RAG agent using a ReAct agent with 3 tools: semantic search over
+  PDF/CSV via ChromaDB, structured SQL queries via a LangChain SQL agent, and session-aware memory retrieval
+  with rolling memory (last 4 turns), enabling intelligent routing across data sources.
+- GitHub: https://github.com/RICHARDKALVIN/multi_source_rag_agent_with_stm
+
+Apartment Management System
+- Stack: Spring Boot, MySQL, React.js
+- Full-stack system supporting multi-role access control, complaint management, service requests, parcel
+  tracking, and resident notifications.
+- Patent filed for the overall system (Application No. IN202641040385).
+- GitHub: https://github.com/RICHARDKALVIN/Apartment-management-sysyem.git
+
+Work Management Platform
+- Stack: FastAPI, PostgreSQL
+- Built a REST API against a formal 4-page technical specification from a Technical Lead, implementing JWT
+  with refresh token support, role-based access control, and CRUD with priority levels, deadlines, and status
+  tracking.
+- Reliability features: custom exception handling middleware, structured logging, rate limiting, and config
+  via .env/settings files — validated and approved by TL before internship onboarding.
+- GitHub: https://github.com/RICHARDKALVIN/Task_Management_System_production_level
+
+AI Chatbot
+- Stack: React, Node.js, Express, MongoDB
+- AI chatbot capable of understanding natural language, answering questions, and providing smart, human-like
+  responses with smooth interactions and fast assistance.
+- GitHub: https://github.com/RICHARDKALVIN/ChatBot_using_React-_and_Node_js
+- Demo: https://chatbot-using-react-44z7.onrender.com
+
+Ruby Chat Room
+- Stack: React, Node.js, Express, MongoDB
+- Real-time chat room web app with fast/secure messaging, emoji support, user presence indicators, and a
+  clean interface.
+- GitHub: https://github.com/RICHARDKALVIN/ruby_chatappo
+
+Vision Voice
+- Stack: React, Node.js, Express, MongoDB (originally built with Python, JS)
+- AI-powered assistive application to help visually impaired individuals understand their surroundings using
+  simple voice-based feedback.
+- GitHub: https://github.com/RICHARDKALVIN/vision_voice-mobile_and_webapp
+- Demo: https://vision-voice-mini-project.onrender.com/
+
+Cafe Tio
+- Stack: Spring Boot, React, MySQL
+- Cafe management system handling orders, inventory, staff, and daily operations.
+- GitHub: https://github.com/RICHARDKALVIN/Cafe-management
+
+Online Shopping Platform
+- Stack: React, Node.js, Express, MySQL
+- Full-stack ecommerce system with cart, orders, payments, and order tracking functionality.
+- GitHub: https://github.com/RICHARDKALVIN/Full-stack-ecommerce--AI-powered
+- Demo: https://full-stack-ecommerce-ai-powered.vercel.app/
+
+Book Bee
+- Stack: Spring Boot, React, MySQL
+- Book store management system to manage books, members, borrowing, and returns.
+- GitHub: https://github.com/RICHARDKALVIN/Library_management
+
+=== ACHIEVEMENTS & CERTIFICATIONS ===
+- Microsoft Azure AI Engineer Associate
+- IBM Java Developer (Coursera)
+- MySQL Intro Certified
+- 300+ LeetCode Problems solved (150 Medium/Hard) — updated from earlier "350+ problems solved"
+- Coordinator — Celenza 2025
+
+=== TIMELINE ===
+2020 — Completed SSLC at GHSS Kannirajapuram, building a strong academic base.
+2022 — Completed HSC at GHSS Kannirajapuram; chose Information Technology as career path.
+2022 — Started B.Tech – Information Technology; expected to pass out in 2026.
+2024 — Internship as Application Developer at Arjun Vision Tech, Ekkaduthangal, Chennai.
+2025 — Focused on building career toward MERN/software development; learned Spring Boot, JDBC, Java backend.
+2026 (Jan) — Started Software Engineer Internship at Soft Suave Technologies; working on microservices, RAG/GenAI
+            systems, and backend platforms. Final year of B.Tech, preparing for full-time placements.
 
 
 
